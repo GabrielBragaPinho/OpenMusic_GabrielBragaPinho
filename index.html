@@ -6,12 +6,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/styles/globalStyles.css" />
     <link rel="stylesheet" href="./src/styles/index.css" />
+    <link rel="stylesheet" href="./src/styles/cards.css" />
+    <link rel="stylesheet" href="./src/styles/buttons.css" />
+    <link rel="stylesheet" href="./src/styles/filters.css" />
     <title>Open Music</title>
   </head>
+
   <body>
-    <main></main>
-    <script src="./src/scripts/theme.js"></script>
-    <script src="./src/scripts/productsData.js"></script>
-    <script src="./src/scripts/index.js"></script>
+    <header>
+      <h1>Open Music</h1>
+      <div class="symbol__container">
+         <img class="symbol__img" src="./src/assets/img/moon.svg" alt="">
+      </div>
+     
+    </header>
+
+    <main>
+      <section class="filters__section">
+        <h2 class="text__2">Gênero Musical</h2>
+        <div class="filters__div">
+          <input class="filters__input"  type="radio" >
+          <label class="filters__button" id="0" for="0">Todos</label>
+        </div> 
+        <div class="filters__div">
+          <input class="filters__input" type="radio" id=1>
+          <label class="filters__button" id="1" for="1">Pop</label>
+        </div> 
+        <div class="filters__div">
+          <input class="filters__input" type="radio" id=2>
+          <label class="filters__button" id="2" for="2">MPB</label>
+        </div> 
+        <div class="filters__div">
+          <input class="filters__input" type="radio" id=3>
+          <label class="filters__button" id="3" for="3">Forró</label>
+        </div> 
+        <div class="filters__div">
+          <input class="filters__input" type="radio" id=4>
+          <label class="filters__button" id="4" for="4">Samba</label>
+        </div> 
+        <div class="filters__div">
+          <input class="filters__input" type="radio" id=5>
+          <label class="filters__button" id="5" for="5">Baião</label>
+        </div> 
+        <div class="filters__div">
+          <input class="filters__input" type="radio" id=6>
+          <label class="filters__button" id="6" for="6">Rap</label>
+        </div> 
+        <div class="filters__div">
+          <input class="filters__input" type="radio" id=7>
+          <label class="filters__button" id="7" for="7">Hip-Hop</label>
+        </div> 
+        <div class="filters__div">
+          <input class="filters__input" type="radio" id=8>
+          <label class="filters__button" id="8" for="8">Rock</label>
+        </div> 
+        <div class="filters__div">
+          <input class="filters__input" type="radio" id=9>
+          <label class="filters__button" id="9" for="9">Reggae</label>
+        </div> 
+        <div class="filters__div">
+          <input class="filters__input" type="radio" id=10>
+          <label class="filters__button" id="10" for="10">Country</label>
+        </div> 
+        <div class="filters__div">
+          <input class="filters__input" type="radio" id=11>
+          <label class="filters__button" id="11" for="11">Gospel</label>
+        </div>
+        
+      </section>
+
+      <section class="slide__section">
+        <div class="slide__container">
+          <div class="slide__text">
+            <p class="text__2">Definir preço</p>
+            <p class="text__3">Até R$: <span id="demo"></span></p>
+          </div>
+          <input type="range" min="0" class="slider" id="myRange">
+      </section>
+
+      <section class="cards__section">
+        <p class="cards__upperText">Albuns encontrados</p>
+        <ul class="cards__container"></ul>
+      </section>
+    </main>
+
+    <script type="module" src="./src/scripts/index.js"></script>
   </body>
 </html>

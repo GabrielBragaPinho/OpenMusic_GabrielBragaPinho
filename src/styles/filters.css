@@ -1,0 +1,43 @@
+.filters__section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+  }
+  .filters__button {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    height: 32px;
+    width: 69px;
+    left: 278px;
+    top: 0px;
+    border-radius: 4px;
+    padding: 8px 8px ;
+    border: none;
+    white-space: nowrap;
+  }
+  
+  .filters__input {
+    display: none;
+  }
+  .filters__div {
+    border-radius: 4px;
+    padding: 8px 8px ;
+    background-color: var(--color-grey-8);
+    color: var(--color-grey-2);
+  }
+  .filters__div:hover {
+    border-radius: 4px;
+    padding: 8px 8px ;
+    background-color: var(--color-grey-5);
+    color: var(--color-grey-1);
+  }
+  .filters__div:has(> input:checked) {
+    background-color: var(--color-grey-2);
+    color: var(--color-grey-8);
+  }
+  

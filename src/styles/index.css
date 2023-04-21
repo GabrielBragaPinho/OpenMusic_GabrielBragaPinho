@@ -1,1 +1,42 @@
-/* Desenvolva sua estilização aqui ... */
+.slide__section {
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+}
+.slide__container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.slide__text {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+.slider {
+    margin-top: 25px;
+    background: linear-gradient(90deg, var(--color-brand-1) 60%, var(--color-grey-5) 60%);
+    appearance: none;
+    height: 8px;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    border: 6px solid var(--color-brand-1);
+    background-color: var(--color-white-fixed);
+}
+.text__3 {
+    color: var(--color-grey-2);
+    font-size: var(--font-2);
+      font-weight: var(--font-weight-1);
+}
+#demo{
+    color: var(--color-grey-2);
+    font-size: var(--font-2);
+      font-weight: var(--font-weight-1);
+}
